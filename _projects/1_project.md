@@ -1,10 +1,11 @@
 ---
 layout: page
 title: AI for Wildlife Monitoring
-description: with background image
-img: assets/img/12.jpg
-importance: 1
-category: research
+description: I developed a real-time wildlife alert system, which uses AI to detect and classify animals in photos received from 4G camera traps and send instant message alerts.
+img: assets/img/ai_for_wildlife.jpg
+redirect: https://github.com/ratsakatika/camera-traps
+importance: 2
+category: artificial intelligence
 related_publications: true
 ---
 

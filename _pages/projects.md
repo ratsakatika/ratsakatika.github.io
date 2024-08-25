@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Find out more about the professional and research projects I have designed and led.
 nav: true
-nav_order: 3
-display_categories: [research, work]
+nav_order: 2
+display_categories: [artificial intelligence, international development]
 horizontal: false
 ---
 

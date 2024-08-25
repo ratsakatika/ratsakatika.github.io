@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Productivity for Prosperity
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+description: I designed and mobilised a £35m programme to support sustainable economic transformation in Tanzania, with a particular focus on carbon markets, investment facilitation and high value agriculture.
+img: assets/img/productivity_for_prosperity.jpg
+redirect: https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300116/summary
+importance: 1
+category: international development
 ---
 
 Every project has a beautiful feature showcase page.

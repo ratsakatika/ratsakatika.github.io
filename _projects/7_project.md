@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Market Systems Development in DRC
-description: with background image
-img: assets/img/4.jpg
-importance: 1
-category: work
-related_publications: true
+description: I managed a £50m market systems development programme, which has helped increase the incomes of 400,000 people working in DRC's agriculture, renewable energy, business services, and river transport sectors.
+img: assets/img/mbandaka.jpg
+redirect: https://www.elan-rdc.com/home
+importance: 5
+category: international development
 ---
 
 Every project has a beautiful feature showcase page.
