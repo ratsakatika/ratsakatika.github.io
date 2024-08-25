@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ratsakatika.github.io/sitemap.xml
