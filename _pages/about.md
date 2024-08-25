@@ -2,24 +2,25 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: AI and Environmental Science Researcher
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Jesus College, Cambridge</p>
+    <p>trr26@cam.ac.uk</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<b> ** Website Under Construction ** <b>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am an Artificial Intelligence and Environmental Science Researcher with extensive experience applying advanced analytics and policy expertise to global challenges.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I was previously an International Development Expert with the British Diplomatic Service (2013-2023) where I designed and led renewable energy, sustainable agriculture and conservation initiatives across multiple countries, securing over £85m of public investment. I have worked with governments to increase their climate change ambition and develop supportive policies for renewable energy investment. I am skilled at engaging on complex, technical issues and managing teams to deliver solutions that influence the wider economic, political and social context.
+
+I am a Chartered Financial Analyst (CFA) with Master's degrees in Aerospace Engineering and Engineering for Sustainable Development. I am currently pursuing a PhD at the University of Cambridge.
