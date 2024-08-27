@@ -8,9 +8,9 @@ middle_name:
 last_name: Ratsakatika
 email: trr26@cam.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Tom Ratsakatika's personal website.
+  Tom Ratsakatika's personal website including details on past on ongoing projects and blog posts.
 footer_text:
-keywords: # jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: tom, thomas, ratsakatika, cambridge, fcdo, dfid, artificial-intelligence, machine-learning, environmental-science, international-development, renewable-energy, sustainable-agriculture, conservation, climate-change, chartered-financial-analyst, cfa, aerospace-engineering, sustainable-development, phd-cambridge, advanced-analytics, python, renewable-energy, engineering, policy, diplomacy, consultancy, investment, finance
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌿 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
