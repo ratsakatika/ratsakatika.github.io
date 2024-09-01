@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Find out more about the professional and research projects I have designed and led.
+description: Find out more about the AI and development projects that I have designed and led.
 nav: true
 nav_order: 2
 display_categories: [artificial intelligence, international development]

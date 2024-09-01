@@ -8,7 +8,7 @@ middle_name:
 last_name: Ratsakatika
 email: trr26@cam.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Tom Ratsakatika's personal website including details on past on ongoing projects and blog posts.
+  Projects, Blog, CV - Tom Ratsakatika's personal website.
 footer_text:
 keywords: tom, thomas, ratsakatika, cambridge, fcdo, dfid, artificial-intelligence, machine-learning, environmental-science, international-development, renewable-energy, sustainable-agriculture, conservation, climate-change, chartered-financial-analyst, cfa, aerospace-engineering, sustainable-development, phd-cambridge, advanced-analytics, python, renewable-energy, engineering, policy, diplomacy, consultancy, investment, finance
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -130,7 +130,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: blog # blog_name will be displayed in your blog page
-blog_description: Analysing and reflecting on past and ongoing projects.
+blog_description:
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
