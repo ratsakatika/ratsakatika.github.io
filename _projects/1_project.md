@@ -8,3 +8,4 @@ importance: 2
 category: artificial intelligence
 related_publications: true
 ---
+npx prettier --write _projects/6_project.md
