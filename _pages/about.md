@@ -15,8 +15,14 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an Artificial Intelligence and Environmental Science Researcher with extensive experience applying advanced analytics and policy expertise to global challenges.
+I am an AI and Environment Researcher at the University of Cambridge with 14 years of experience applying strategic, analytical, and implementation expertise to global challenges.
 
-I was previously an International Development Expert with the British Diplomatic Service (2013-2023) where I designed and led renewable energy, sustainable agriculture and conservation initiatives across multiple countries, securing over £85m of public investment. I have worked with governments to increase their climate change ambition and develop supportive policies for renewable energy investment. I am skilled at engaging on complex, technical issues and managing teams to deliver solutions that influence the wider economic, political and social context.
+Previously, I served as an International Development Expert with the British Diplomatic Service (2013-2023). [My work](projects) included:
 
-I am a Chartered Financial Analyst (CFA) with Master's degrees in Aerospace Engineering and Engineering for Sustainable Development. I am currently pursuing a PhD at the University of Cambridge.
+- Leading one of the UK's largest market systems development projects in DRC,
+- Designing initiatives to facilitate forest carbon project development in Tanzania,
+- Overseeing the installation of 100 solar mini-grids in villages across Sierra Leone.
+
+I played strategic roles in multiple countries, leading on private sector development and climate policy while securing over £85m for project implementation.
+
+I am a Chartered Financial Analyst with Master's degrees in Aerospace Engineering and Engineering for Sustainable Development. I am pursuing a PhD in AI and Environmental Risk at the University of Cambridge. My research will analyse diverse satellite and drone datasets to monitor deforestation and biodiversity in the Carpathian Mountains.
