@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <b> AI & Sustainable Development | Research • Strategy • Implementation <b>
+subtitle: <b> AI & Sustainable Development | Research • Strategy • Implementation </b>
 
 profile:
   align: right
