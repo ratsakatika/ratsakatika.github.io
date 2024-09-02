@@ -53,7 +53,7 @@ Chapter 1 of the thesis will cover the introduction and literature review. Chapt
 {% include figure.liquid loading="eager" path="assets/img/map.png" title="Map of Romania highlighting the Făgăraș Mountain Range" class="img-fluid rounded z-depth-1" %}
 _Figure 2: Map of Romania highlighting the Făgăraș Mountain Range_ [^44].
 
-## References
+### References
 
 [^1]: FAO. _The State of the World’s Forests 2022_. FAO; 2022. Available from: http://www.fao.org/documents/card/en/c/cb9360en.
 [^2]: Wirth C. Old-Growth Forests: Function, Fate and Value – a Synthesis. In: Wirth C, Gleixner G, Heimann M, editors. _Old-Growth Forests: Function, Fate and Value_. Berlin, Heidelberg: Springer; 2009. p. 465-91. Available from: https://doi.org/10.1007/978-3-540-92706-8_21.
