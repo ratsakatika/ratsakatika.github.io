@@ -17,7 +17,7 @@ social: true # includes social icons at the bottom of the page
 
 I am an AI and Environment Researcher at the University of Cambridge with 14 years of experience applying strategic, analytical, and implementation expertise to global challenges.
 
-Previously, I served as an International Development Expert with the British Diplomatic Service (2013-2023). [My work](projects) included:
+Previously, I served as an International Development Expert with the British Diplomatic Service (2013-2023). [My work](https://ratsakatika.com/projects/) included:
 
 - Leading one of the UK's largest market systems development projects in DRC,
 - Designing initiatives to facilitate forest carbon project development in Tanzania,

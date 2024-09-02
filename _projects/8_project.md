@@ -12,7 +12,7 @@ related_publications: true
 **My PhD will leverage remote sensing data and state-of-the-art (SOTA) processing pipelines to identify old-growth forests in Romania's Carpathian Mountains, and evaluate the forests' value in terms of biodiversity and carbon.** The research will collaborate with [Fundația Conservation Carpathia (FCC)](https://www.carpathia.org/), who will provide scientific and contextual knowledge, and an existing dataset of 300 mobile laser plot scans, high-resolution drone imagery, and a comprehensive GIS database (including the locations of catalogued and potential old-growth forests). This will be complemented with further data collected in the field. The original PhD proposal is below. I will update this page will outputs from my research as it progresses.
 
 {% include figure.liquid loading="eager" path="assets/img/rucar.jpg" title="Map of mountain village nested in a valley" class="img-fluid rounded z-depth-1" %}
-_Figure 1: The village of Rucar nested in Romania's Carpathian Mountains_ [^44].
+_Figure 1: The village of Rucar nested in Romania's Carpathian Mountains_.
 
 ## PhD Proposal - 22 July 2024
 
