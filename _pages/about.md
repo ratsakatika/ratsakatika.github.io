@@ -15,14 +15,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an Artificial Intelligence and Environment Researcher at the University of Cambridge with 14 years of experience applying strategic, analytical, and implementation expertise to global challenges.
+<b> I am an AI and Environmental Risk Researcher at the University of Cambridge </b> with 13 years of experience in applying technical, strategic, and implementation expertise to global challenges. My current research leverages machine learning to analyse data from satellites, drones and 3D point cloud models to assess deforestation and biodiversity.
 
-Previously, I served as an International Development Expert with the British Diplomatic Service (2013-2023). [My work](projects) included:
+<b> From 2013-2023, I served as an International Development Expert with the British Diplomatic Service.</b> I played strategic roles in multiple countries, leading on private sector development and climate policy while securing over £85m for project implementation. [My work](projects) included:
 
-- Leading one of the UK's largest market systems development projects in DRC,
-- Designing initiatives to facilitate forest carbon project development in Tanzania,
+- Leading one of the UK's largest market systems development projects in the Democratic Republic of Congo,
+- Designing initiatives to facilitate forest carbon investments in Tanzania,
 - Overseeing the installation of 100 solar mini-grids in villages across Sierra Leone.
 
-I played strategic roles in multiple countries, leading on private sector development and climate policy while securing over £85m for project implementation.
-
-I am a Chartered Financial Analyst with Master's degrees in Aerospace Engineering and Engineering for Sustainable Development. I am pursuing a PhD in AI and Environmental Risk at the University of Cambridge. My research will analyse diverse satellite and drone datasets to monitor deforestation and biodiversity in the Carpathian Mountains.
+I hold Master’s degrees in Aerospace Engineering and Engineering for Sustainable Development and the Chartered Financial Analyst designation.
