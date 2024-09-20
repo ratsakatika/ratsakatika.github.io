@@ -23,4 +23,4 @@ social: true # includes social icons at the bottom of the page
 - Designing initiatives to facilitate forest carbon investments in Tanzania,
 - Overseeing the installation of 100 solar mini-grids in villages across Sierra Leone.
 
-I am currently pursuing a PhD and hold Master’s degrees in Aerospace Engineering and Engineering for Sustainable Development.
+I am currently pursuing a PhD and hold Master’s degrees in Aerospace Engineering, Engineering for Sustainable Development and Environmental Data Science.
