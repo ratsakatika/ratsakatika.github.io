@@ -167,7 +167,7 @@ disqus_shortname: al-folio # put your disqus shortname
 external_sources:
   - name: AI for Wildlife Monitoring
     posts:
-      - url: https://www.endangeredlandscapes.org/news/
+      - url: https://www.endangeredlandscapes.org/news/ai-for-wildlife-monitoring-a-real-time-alert-system-for-bears-and-wild-boars-in-romanias-carpathian-mountains/
         published_date: 2024-08-27
 
 # -----------------------------------------------------------------------------
