@@ -44,7 +44,7 @@
     {
       "name": "Foreign, Commonwealth and Development Office",
       "location": "Various",
-      "position": "International Development Expert",
+      "position": "Economic Development Expert",
       "url": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office",
       "startDate": "2013",
       "endDate": "2023",
@@ -77,10 +77,21 @@
       "institution": "University of Cambridge",
       "location": "Cambridge, UK",
       "url": "https://ai4er-cdt.esc.cam.ac.uk/",
-      "area": "AI for Environmental Risk",
-      "studyType": "PhD + MRes",
+      "area": "Machine Learning and Remote Sensing",
+      "studyType": "PhD",
       "startDate": "2023",
       "endDate": "",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "University of Cambridge",
+      "location": "Cambridge, UK",
+      "url": "https://ai4er-cdt.esc.cam.ac.uk/",
+      "area": "Environmental Data Science",
+      "studyType": "MRes",
+      "startDate": "2023",
+      "endDate": "2024",
       "score": "",
       "courses": []
     },
@@ -150,13 +161,13 @@
   ],
   "skills": [
     {
-      "name": "Artificial Intelligence",
+      "name": "Programme Leadership",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": []
     },
     {
-      "name": "Diplomacy",
+      "name": "Policy & Diplomacy",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": []
@@ -168,13 +179,19 @@
       "keywords": []
     },
     {
-      "name": "Environmental Science",
+      "name": "Climate & Environment",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": []
     },
     {
-      "name": "Investment and Finance",
+      "name": "Machine Learning",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": []
+    },
+    {
+      "name": "Remote Sensing",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": []
