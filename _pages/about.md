@@ -15,12 +15,15 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-<b> I am an AI and Environmental Risk Researcher at the University of Cambridge </b> with 13 years of experience in applying technical, strategic, and implementation expertise to global challenges. My current research leverages machine learning to analyse data from satellites, drones and 3D point cloud models to assess deforestation and biodiversity.
+<b>I am an AI and Environmental Risk Researcher at the University of Cambridge, </b> with 14 years of experience applying technical, strategic, and implementation expertise to global challenges. [My research](projects/8_project) uses machine learning to analyse satellites, drones and 3D point cloud data to advance the protection of biodiverse forest ecosystems.
 
-<b> From 2013-2023, I served as an International Development Expert with the British Diplomatic Service.</b> I played strategic roles in multiple countries, leading on private sector development and climate policy while securing over £85m for project implementation. [My work](projects) included:
+<b>From 2013 to 2023, I served as an International Development Expert with the British Diplomatic Service,</b> leading private sector development, investment and climate policy in multiple countries and securing over £85m for programme implementation.
 
-- Leading one of the UK's largest market systems development projects in the Democratic Republic of Congo,
-- Designing initiatives to facilitate forest carbon investments in Tanzania,
-- Overseeing the installation of 100 solar mini-grids in villages across Sierra Leone.
+<b>I have led teams in challenging and complex contexts.</b> [My work](projects) includes:
 
-I am currently pursuing a PhD and hold Master’s degrees in Aerospace Engineering, Engineering for Sustainable Development and Environmental Data Science.
+- Leading a [£50m market systems development programme](https://www.elan-rdc.com/home) to enhance livelihoods in the Democratic Republic of Congo.
+- Designing a £35m programme to [catalyse agribusiness and forest carbon investments](https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300116/summary) in Tanzania.
+- Managing a £35m programme to [deploy 100 solar mini-grids](https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300303/summary) in villages across Sierra Leone.
+- Developing a novel [AI-based wildlife alert system](https://github.com/ratsakatika/camera-traps) to mitigate human-wildlife conflict in Romania.
+
+I am currently pursuing a PhD with [Professor Lines](https://www.linesresearchgroup.com/) and am open to consultancy roles. I hold Master’s degrees in Aerospace Engineering, Engineering for Sustainable Development and Environmental Data Science.
