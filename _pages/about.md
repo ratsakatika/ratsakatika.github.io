@@ -26,4 +26,4 @@ social: true # includes social icons at the bottom of the page
 - Managing a £35m programme to [deploy 100 solar mini-grids](https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300303/summary) in villages across Sierra Leone.
 - Developing a novel [AI-based wildlife alert system](https://github.com/ratsakatika/camera-traps) to mitigate human-wildlife conflict in Romania.
 
-I am currently pursuing a PhD with [Professor Lines](https://www.linesresearchgroup.com/) and am open to consultancy roles. I hold Master’s degrees in Aerospace Engineering, Engineering for Sustainable Development and Environmental Data Science.
+<b>I am currently pursuing a PhD with [Professor Lines](https://www.linesresearchgroup.com/) and am open to consultancy roles.</b> I hold Master’s degrees in Aerospace Engineering, Engineering for Sustainable Development and Environmental Data Science.
