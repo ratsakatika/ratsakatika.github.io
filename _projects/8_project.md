@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AI, Remote Sensing & Old-Growth Forests
-description: My PhD research will investigate machine learning and remote sensing techniques to advance the detection of biodiverse old-growth forests.
+description: My PhD research analyses machine learning and remote sensing techniques to advance the detection of biodiverse old-growth forests.
 img: assets/img/drone.jpg
 redirect:
 importance: 1
