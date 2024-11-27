@@ -12,7 +12,7 @@ related_publications: false
 {% include figure.liquid loading="eager" path="assets/img/rucar.jpg" title="Map of mountain village nested in a valley" class="img-fluid rounded z-depth-1" %}
 _Figure 1: The village of Rucar nested in Romania's Carpathian Mountains_.
 
-## Machine Learning and Remote Sensing Techniques for Old-Growth Forests Detection: A Carpathian Mountains Case Study
+## Machine Learning and Remote Sensing for Old-Growth Forest Detection: A Carpathian Mountains Case Study
 
 **Thomas Ratsakatika<sup>1</sup>,** [Srinivasan Keshav](https://svr-sk818-web.cl.cam.ac.uk/keshav/wiki/index.php/Main_Page)<sup>2</sup>, Mihai Zotta<sup>3</sup>, **[Emily Lines](https://www.linesresearchgroup.com/)<sup>1</sup>**  
 <sup>1</sup> Department of Geography, University of Cambridge, <sup>2</sup> Department of Computer Science and Technology, University of Cambridge, <sup>3</sup> Fundația Conservation Carpathia
