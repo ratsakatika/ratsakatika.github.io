@@ -15,7 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-<b>I am a Machine Learning and Remote Sensing Researcher at the University of Cambridge</b> with 14 years of experience applying technical, strategic and implementation expertise to global challenges. My [current research](projects/8_project) investigates machine learning and remote sensing techniques to detect and conserve biodiverse old-growth forests.
+<b>I am a Machine Learning and Remote Sensing Researcher at the University of Cambridge</b> with 14 years of experience applying technical, strategic and implementation expertise to complex global challenges. My [current research](projects/8_project) investigates machine learning and remote sensing techniques to detect and conserve biodiverse old-growth forests.
 
 <b>From [2013 to 2023](https://www.linkedin.com/in/tomratsakatika/), I was an Economic Development Adviser with the British Diplomatic Service</b>, leading on private sector development, investment and climate change policy. I managed multidisciplinary teams during postings in three countries and secured over <b>£85m</b> for programme implementation. [My work](projects) included:
 
