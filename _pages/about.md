@@ -15,7 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-<b>I am a Machine Learning and Remote Sensing Researcher at the University of Cambridge</b> with [14 years experience](https://www.linkedin.com/in/tomratsakatika/) applying technical, strategic and implementation expertise to global challenges.
+<b>I am a Machine Learning and Remote Sensing Researcher at the University of Cambridge</b> with [14 years of experience](https://www.linkedin.com/in/tomratsakatika/) applying technical, strategic and implementation expertise to global challenges.
 
 <b>From 2013 to 2023, I was an Economic Development Adviser with the British Diplomatic Service</b>, leading on [private sector development, investment and climate change policy](projects). I managed multidisciplinary teams during postings in three countries and secured over <b>£85m</b> for programme implementation. My work included:
 
