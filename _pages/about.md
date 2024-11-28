@@ -17,11 +17,11 @@ social: true # includes social icons at the bottom of the page
 
 <b>I am a Machine Learning and Remote Sensing Researcher at the University of Cambridge</b> with 14 years of experience designing and leading complex programmes to address global challenges. My [current research](projects/8_project) investigates machine learning and remote sensing techniques to detect and conserve biodiverse old-growth forests.
 
-<b>From [2013 to 2023](https://www.linkedin.com/in/tomratsakatika/), I served as an Economic Development Expert with the British Diplomatic Service</b>, leading private sector development, investment and climate change policy and programmes. I managed multidisciplinary teams during postings in three countries and secured over £85m for programme implementation. My work included:
+<b>From [2013 to 2023](https://www.linkedin.com/in/tomratsakatika/), I was an Economic Development Adviser with the British Diplomatic Service</b>, leading on private sector development, investment and climate change policy and programmes. I managed multidisciplinary teams during postings in three countries and secured over <b>£85m</b> for programme implementation. [My work](projects) included:
 
-- Leading a [£50m market systems development programme](https://www.elan-rdc.com/home) to enhance livelihoods in the Democratic Republic of Congo.
-- Designing a [£35m programme to catalyse agribusiness and forest carbon investments](https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300116/summary) in Tanzania.
-- Managing a [£35m programme to deploy 100 solar mini-grids](https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300303/summary) in villages across Sierra Leone.
+- Designing a <b>£35m</b> programme to catalyse [agribusiness and forest carbon investments](https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300116/summary) in Tanzania.
+- Managing a <b>£35m</b> programme to [deploy 100 solar mini-grids](https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300303/summary) in villages across Sierra Leone.
+- Overseeing a <b>£70m</b> portfolio of [market development](https://www.elan-rdc.com/home) and [infrastructure](https://devtracker.fcdo.gov.uk/programme/GB-1-203164/summary) programmes to enhance livelihoods in the Democratic Republic of Congo.
 
 <b>I am a PhD candidate</b> and hold Master’s degrees in Aerospace Engineering, Engineering for Sustainable Development and Environmental Data Science.
 
