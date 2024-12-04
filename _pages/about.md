@@ -24,5 +24,3 @@ social: true # includes social icons at the bottom of the page
 - Overseeing a <b>£70m</b> portfolio of [market development](https://www.elan-rdc.com/home) and [infrastructure](https://devtracker.fcdo.gov.uk/programme/GB-1-203164/summary) programmes to enhance livelihoods in the Democratic Republic of Congo.
 
 <b>My [current research](projects/8_project) investigates machine learning and remote sensing techniques to detect and conserve biodiverse old-growth forests.</b> I am a PhD candidate and hold Master’s degrees in Aerospace Engineering, Engineering for Sustainable Development and Environmental Data Science.
-
-<b>I am currently taking on short-term consultancy roles.</b>
