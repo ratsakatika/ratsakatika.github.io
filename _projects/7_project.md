@@ -5,5 +5,5 @@ description: I managed a £50m market systems development programme, which has h
 img: assets/img/mbandaka.jpg
 redirect: https://www.elan-rdc.com/home
 importance: 5
-category: international development
+category: economic development
 ---
