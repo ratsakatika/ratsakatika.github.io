@@ -9,8 +9,8 @@ category: artificial intelligence
 related_publications: false
 ---
 
-{% include figure.liquid loading="eager" path="assets/img/rucar.jpg" title="Map of mountain village nested in a valley" class="img-fluid rounded z-depth-1" %}
-_Figure 1: The village of Rucar nested in Romania's Carpathian Mountains_.
+{% include figure.liquid loading="eager" path="assets/img/ogf.jpg" title="Romanian old-growth forest (credit: Fundația Conservation Carpathia)" class="img-fluid rounded z-depth-1" %}
+_Figure 1: Old-growth forest in the Făgăraș Mountains (credit: Fundația Conservation Carpathia)_.
 
 ## Protecting the Irreplaceable: Detecting Old-Growth Forests in the Carpathian Mountains
 
