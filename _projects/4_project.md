@@ -5,5 +5,5 @@ description: I designed and mobilised a £30m programme to increase exports and 
 img: assets/img/invest_salone.jpg
 redirect: https://investsalone.com/
 importance: 2
-category: international development
+category: economic development
 ---
