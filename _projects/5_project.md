@@ -5,5 +5,5 @@ description: I led an ambitious programme to install 100 solar mini-grids in tow
 img: assets/img/solar_panels.jpg
 redirect: https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300303/summary
 importance: 3
-category: international development
+category: economic development
 ---
