@@ -5,5 +5,5 @@ description: I designed and mobilised a £35m programme to support sustainable e
 img: assets/img/productivity_for_prosperity.jpg
 redirect: https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300116/summary
 importance: 1
-category: international development
+category: economic development
 ---
