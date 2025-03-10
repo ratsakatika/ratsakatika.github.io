@@ -17,7 +17,7 @@ social: true # includes social icons at the bottom of the page
 
 <b>I am a Machine Learning and Remote Sensing Researcher at the University of Cambridge</b> with [14 years of experience](https://www.linkedin.com/in/tomratsakatika/) applying technical, strategic and implementation expertise to global challenges.
 
-<b>From 2013 to 2023, I was an Economic Development Adviser with the British Diplomatic Service</b>, leading on [private sector development, investment and climate change policy](projects). I managed multidisciplinary teams during postings in three countries and secured over <b>£85m</b> for programme implementation. My work included:
+<b>From 2013 to 2023, I was an Economic Development Adviser with the British Diplomatic Service</b>, leading on [private sector development, investment and climate change](projects) programmes and policy. I managed multidisciplinary teams during postings in three countries and secured over <b>£85m</b> for programme implementation. My work included:
 
 - Designing a <b>£35m</b> programme to catalyse [agribusiness and forest carbon investments](https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300116/summary) in Tanzania.
 - Managing a <b>£35m</b> programme to [deploy 100 solar mini-grids](https://devtracker.fcdo.gov.uk/programme/GB-GOV-1-300303/summary) in villages across Sierra Leone.
