@@ -184,6 +184,9 @@ h2 { font-family: var(--serif); font-weight: 400; font-size: 36px; line-height: 
 .entry__text h3 { font-size: 18px; font-weight: 600; line-height: 1.3; }
 .entry__text p { font-size: 15px; line-height: 1.5; color: var(--ink-soft); }
 .entry__photo { width: 220px; height: 140px; object-fit: cover; border-radius: 4px; }
+/* Which part of a photo to keep when the crop is shallower than the image */
+.entry__photo--top { object-position: 50% 0%; }
+.entry__photo--bottom { object-position: 50% 100%; }
 .note { margin-top: 20px; font-size: 14px; color: var(--muted); }
 
 /* Talks and teaching */
