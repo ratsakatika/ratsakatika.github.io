@@ -207,6 +207,7 @@ a.list__item:hover .list__title { text-decoration: underline; }
 .footer__id { display: flex; flex-direction: column; gap: 8px; }
 .footer__name { font-family: var(--serif); font-size: 30px; color: #fff; line-height: 1.2; }
 .footer__line { font-size: 15px; color: var(--footer-muted); }
+.footer__note { font-size: 15px; max-width: 32em; }
 .footer__email, .footer__links a { color: #fff; font-size: 15px; }
 .footer__links { display: flex; gap: 28px; flex-wrap: wrap; padding-top: 8px; }
 .footer__small { font-size: 13px; color: var(--footer-small); border-top: 1px solid var(--footer-rule); padding-top: 16px; }
