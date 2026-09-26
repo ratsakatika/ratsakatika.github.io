@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Thomas Ratsakatika</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script>
+    // Old site addresses that no longer exist: send them to the matching section.
+    (function () {
+      var p = location.pathname.toLowerCase();
+      var map = [
+        [/^\/projects\/(1|8)_project/, '/#latest'],
+        [/^\/projects/, '/#experience'],
+        [/^\/(cv|experience)/, '/#experience'],
+        [/^\/(publications|repositories|research)/, '/#latest'],
+        [/^\/teaching/, '/#talks'],
+        [/^\/(blog|news|people|assets)/, '/']
+      ];
+      for (var i = 0; i < map.length; i++) {
+        if (map[i][0].test(p)) { location.replace(map[i][1]); return; }
+      }
+    })();
+  </script>
+</head>
+<body>
+  <main class="section wrap notfound">
+    <h2>Page not found</h2>
+    <p class="notfound__text">The site is now a single page. Try the <a href="/">home page</a>, or the <a href="/#latest">latest work</a>, <a href="/#experience">experience</a> and <a href="/#talks">talks</a> sections.</p>
+  </main>
+</body>
+</html>

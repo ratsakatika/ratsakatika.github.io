@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thomas Ratsakatika</title>
+  <meta name="description" content="PhD researcher at the University of Cambridge using machine learning and remote sensing to map forests and monitor wildlife, after ten years in international development.">
+  <meta name="author" content="Thomas Ratsakatika">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F4EFE4">
+  <link rel="canonical" href="https://ratsakatika.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thomas Ratsakatika">
+  <meta property="og:description" content="Machine learning and remote sensing to map forests and monitor wildlife. PhD researcher, University of Cambridge.">
+  <meta property="og:url" content="https://ratsakatika.com/">
+  <meta property="og:image" content="https://ratsakatika.com/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Rucăr village and forested hills in the Southern Carpathians">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="fonts/newsreader-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Thomas Ratsakatika",
+    "alternateName": "Tom Ratsakatika",
+    "url": "https://ratsakatika.com/",
+    "image": "https://ratsakatika.com/img/portrait.jpg",
+    "jobTitle": "PhD researcher",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "University of Cambridge",
+      "url": "https://www.cam.ac.uk/"
+    },
+    "email": "mailto:trr26@cam.ac.uk",
+    "sameAs": [
+      "https://orcid.org/0009-0004-0981-6062",
+      "https://www.linkedin.com/in/tratsakatika/",
+      "https://github.com/ratsakatika",
+      "https://www.geog.cam.ac.uk/people/ratsakatika/",
+      "https://www.cst.cam.ac.uk/people/trr26"
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+  <a class="skip" href="#latest">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="wordmark" href="#top">Thomas Ratsakatika</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#latest">Latest</a>
+        <a href="#experience">Experience</a>
+        <a href="#talks">Talks</a>
+        <a href="#contact">Contact</a>
+        <a class="nav__cv" href="https://www.linkedin.com/in/tratsakatika/">CV on LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <img class="hero__photo"
+           src="img/hero-1800.jpg"
+           srcset="img/hero-900.jpg 900w, img/hero-1800.jpg 1800w"
+           sizes="100vw"
+           width="1800" height="896"
+           alt="Rucăr village and forested hills in the Southern Carpathians under a stormy sky"
+           fetchpriority="high">
+      <div class="hero__shade" aria-hidden="true"></div>
+      <p class="hero__caption">Rucăr, Southern Carpathians</p>
+      <div class="wrap hero__content">
+        <p class="eyebrow eyebrow--light">PhD researcher · University of Cambridge</p>
+        <h1 class="hero__title">I use machine learning and remote sensing to map forests and monitor wildlife, informed by ten years in economic development policy and programmes.</h1>
+        <ul class="pills">
+          <li><a href="mailto:trr26@cam.ac.uk">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/tratsakatika/">LinkedIn</a></li>
+          <li><a href="https://github.com/ratsakatika">GitHub</a></li>
+          <li><a href="https://orcid.org/0009-0004-0981-6062">ORCID</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="latest" class="section wrap">
+      <div class="section__head">
+        <h2>Latest</h2>
+        <p class="section__sub">Research and implementation in partnership with Fundația Conservation Carpathia in Romania's Făgăraș Mountains</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <p class="eyebrow eyebrow--accent">Preprint · September 2026 · under review</p>
+          <figure class="card__figure card__figure--map">
+            <picture>
+              <source srcset="img/map.webp" type="image/webp">
+              <img src="img/map.png" width="1146" height="701" alt="Map of predicted old-growth forest probability across the Făgăraș Mountains" loading="lazy">
+            </picture>
+            <figcaption>Old-growth forest across the Făgăraș Mountains, from most likely (green) to least likely (red).</figcaption>
+          </figure>
+          <h3 class="card__title">Geospatial embeddings detect old-growth forests but buffered spatial validation narrows their advantage over Sentinel features</h3>
+          <p>Foundation-model embeddings and ordinary Sentinel features can detect old-growth forest. However, once training and test sites are kept 10 km apart, the embeddings' advantage is no longer distinguishable from zero. This paper shows why accounting for spatial autocorrelation matters for old-growth forest mapping.</p>
+          <p class="links">
+            <a class="link link--primary" href="https://arxiv.org/abs/2609.28194">Read the paper</a>
+            <a class="link" href="https://doi.org/10.5281/zenodo.22693148">Data</a>
+            <a class="link" href="https://github.com/ratsakatika/detecting-old-growth-forests">Code</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <p class="eyebrow eyebrow--accent">Deployed · 2024 · real-time wildlife alerts</p>
+          <figure class="card__figure">
+            <img src="img/bear.jpg" width="1400" height="994" alt="Camera-trap photograph of a brown bear in a forest clearing with the model's detection box" loading="lazy">
+            <figcaption>A European brown bear detected by the AI-based real-time wildlife alert system.</figcaption>
+          </figure>
+          <h3 class="card__title">Using AI to help rangers protect wildlife and rural communities</h3>
+          <p>A two-stage classifier identifies wildlife, such as bears, wolves and wild boar, in photos received from internet-enabled camera traps, then sends real-time alerts to Fundația Conservation Carpathia's rapid intervention teams. Deployed without interruption since May 2024.</p>
+          <p class="links">
+            <a class="link link--primary" href="https://www.endangeredlandscapes.org/news/ai-for-wildlife-monitoring-a-real-time-alert-system-for-bears-and-wild-boars-in-romanias-carpathian-mountains/">Read the story</a>
+            <a class="link" href="https://github.com/ratsakatika/camera-traps">Code</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section section--rule wrap">
+      <div class="intro">
+        <img class="intro__portrait" src="img/portrait.jpg" width="600" height="668" alt="Portrait of Thomas Ratsakatika" loading="lazy">
+        <div>
+          <h2>Experience</h2>
+          <p class="intro__text">My work sits between research, engineering and policy. At Cambridge, I apply machine learning and remote sensing to environmental problems, from detecting old-growth forests to automating wildlife monitoring. Previously, I led teams of technical specialists and programme managers in DR Congo, Sierra Leone and Tanzania and secured over £85 million for infrastructure, investment and job creation programmes.</p>
+        </div>
+      </div>
+
+      <ol class="timeline">
+        <li class="entry entry--now">
+          <p class="entry__date">2023–</p>
+          <div class="entry__spine" aria-hidden="true"></div>
+          <div class="entry__body">
+            <div class="entry__text">
+              <h3>PhD + MRes in AI for Environmental Risk, University of Cambridge</h3>
+              <p>Old-growth forest detection from satellite data and geospatial foundation models, and real-time wildlife alerts from camera traps, in partnership with Fundația Conservation Carpathia.</p>
+            </div>
+            <img class="entry__photo" src="img/drone.jpg" width="800" height="602" alt="Survey drone on a car bonnet in front of spruce forest" loading="lazy">
+          </div>
+        </li>
+
+        <li class="entry">
+          <p class="entry__date">2020–2023</p>
+          <div class="entry__spine" aria-hidden="true"></div>
+          <div class="entry__body">
+            <div class="entry__text">
+              <h3>Head of the Private Sector Development Hub, British High Commission, Tanzania</h3>
+              <p>Led the UK's partnership with Tanzania on climate finance and private sector development. Diplomatic engagement ahead of COP26, after which Tanzania doubled its mitigation target and removed coal from its energy plan. Secured a £35m green growth programme. Ran a pilot using AI on satellite imagery to detect mangrove loss in the Rufiji Delta.</p>
+            </div>
+            <img class="entry__photo" src="img/tanzania.jpg" width="800" height="600" alt="Farmland and mountains in northern Tanzania" loading="lazy">
+          </div>
+        </li>
+
+        <li class="entry">
+          <p class="entry__date">2017–2020</p>
+          <div class="entry__spine" aria-hidden="true"></div>
+          <div class="entry__body">
+            <div class="entry__text">
+              <h3>Deputy Team Leader, Economic Growth, British High Commission, Sierra Leone</h3>
+              <p>Pivoted the UK's post-Ebola economic partnership towards long-term growth and jobs. Designed and mobilised Invest Salone (£30m) for agribusiness, tourism and fisheries. Oversaw a $50m public-private partnership to build and run 100 solar mini-grids.</p>
+            </div>
+            <img class="entry__photo" src="img/sierra-leone.jpg" width="800" height="600" alt="Visiting a solar mini-grid in Sierra Leone" loading="lazy">
+          </div>
+        </li>
+
+        <li class="entry">
+          <p class="entry__date">2015–2017</p>
+          <div class="entry__spine" aria-hidden="true"></div>
+          <div class="entry__body">
+            <div class="entry__text">
+              <h3>Private Sector Development Adviser, British Embassy, Democratic Republic of Congo</h3>
+              <p>Managed a £70m portfolio of agriculture, renewable energy and public works programmes, including one of the UK's largest market systems programmes, which has reached an estimated 979,000 people. Redesigned a £20m road programme in the conflict-affected east; construction employed 2,000 people.</p>
+            </div>
+            <img class="entry__photo" src="img/drc.jpg" width="800" height="450" alt="A four-by-four on a muddy forest road in eastern DR Congo" loading="lazy">
+          </div>
+        </li>
+
+        <li class="entry">
+          <p class="entry__date">2013–2015</p>
+          <div class="entry__spine" aria-hidden="true"></div>
+          <div class="entry__body">
+            <div class="entry__text">
+              <h3>Department for International Development, United Kingdom</h3>
+              <p>Economic Analyst in the Chief Economist's Office.<br>Private Sector Development Adviser in the Investment Climate Team.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="entry">
+          <p class="entry__date">2012–2013</p>
+          <div class="entry__spine" aria-hidden="true"></div>
+          <div class="entry__body">
+            <div class="entry__text">
+              <h3>MPhil Engineering for Sustainable Development, University of Cambridge · Distinction</h3>
+              <p>Field research on social enterprise in Ecuador.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="entry">
+          <p class="entry__date">2010–2012</p>
+          <div class="entry__spine" aria-hidden="true"></div>
+          <div class="entry__body">
+            <div class="entry__text">
+              <h3>Associate Consultant, Aon Investment Consulting, London</h3>
+              <p>Financial models across the major asset classes; administered a £240m derivative fund. Completed the CFA qualification.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="entry entry--last">
+          <p class="entry__date">2005–2010</p>
+          <div class="entry__spine" aria-hidden="true"></div>
+          <div class="entry__body">
+            <div class="entry__text">
+              <h3>MEng Aerospace Engineering, University of Bath · First class</h3>
+              <p>Placement year at Leonardo (AgustaWestland), modelling rotor-blade vibration and cracking in composite blades.</p>
+            </div>
+          </div>
+        </li>
+      </ol>
+      <p class="note">Further details are on <a href="https://www.linkedin.com/in/tratsakatika/">LinkedIn</a>.</p>
+    </section>
+
+    <section id="talks" class="section section--rule wrap">
+      <div class="two-col">
+        <div>
+          <h2 class="h2--small">Talks</h2>
+          <ul class="list">
+            <li class="list__item list__item--static">
+              <span class="eyebrow eyebrow--accent">ML4EO 2026 · University of Exeter · June 2026</span>
+              <span class="list__title">Detecting old-growth forests with geospatial foundation model embeddings and spatial validation</span>
+            </li>
+            <li>
+              <a class="list__item" href="https://nordicsocietyoikos.glueup.com/event/joint-nso-gf%c3%b6-conference-2026-135623/">
+                <span class="eyebrow eyebrow--accent">Joint NSO–GfÖ Conference 2026 · Odense · September 2026</span>
+                <span class="list__title">Old-growth forest detection with geospatial foundation models and spatial validation</span>
+              </a>
+            </li>
+            <li class="list__item list__item--static">
+              <span class="eyebrow eyebrow--accent">Energy and Environment Group · Cambridge · 2024</span>
+              <span class="list__title">Real-time wildlife monitoring with AI and 4G camera traps</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="h2--small">Teaching</h2>
+          <ul class="list">
+            <li class="list__item list__item--static">
+              <span class="eyebrow">Supervisions · Department of Geography, Cambridge</span>
+              <span class="list__title">Global Environmental Change: Ecosystems, Carbon, Climate and Remote Sensing, second-year undergraduates</span>
+            </li>
+            <li class="list__item list__item--static">
+              <span class="eyebrow">Dissertation workshops · Department of Geography, Cambridge</span>
+              <span class="list__title">Quantitative methods and remote sensing for undergraduate dissertations</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__row">
+        <div class="footer__id">
+          <p class="footer__name">Thomas (Tom) Ratsakatika</p>
+          <p class="footer__line">University of Cambridge</p>
+          <a class="footer__email" href="mailto:trr26@cam.ac.uk">trr26@cam.ac.uk</a>
+        </div>
+        <ul class="footer__links">
+          <li><a href="https://www.linkedin.com/in/tratsakatika/">Full CV on LinkedIn</a></li>
+          <li><a href="https://orcid.org/0009-0004-0981-6062">ORCID</a></li>
+          <li><a href="https://github.com/ratsakatika">GitHub</a></li>
+        </ul>
+      </div>
+      <p class="footer__small">© 2026 Thomas Ratsakatika · All photographs are my own</p>
+    </div>
+  </footer>
+
+  <!--
+    Private visitor counts (optional). Create a free account at https://www.goatcounter.com/,
+    then replace MYCODE below with the code you chose and remove the comment markers.
+    It sets no cookies and the dashboard is visible only to you.
+
+    <script data-goatcounter="https://MYCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  -->
+</body>
+</html>
