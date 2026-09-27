@@ -80,7 +80,7 @@ a:focus-visible, button:focus-visible {
 .wordmark:hover { text-decoration: none; }
 .nav { display: flex; gap: 32px; align-items: center; font-size: 16px; font-weight: 500; }
 .nav a { color: var(--ink); }
-.nav__cv {
+.nav__contact {
   text-decoration: underline;
   text-decoration-color: var(--accent);
   text-decoration-thickness: 2px;
@@ -199,6 +199,7 @@ h2 { font-family: var(--serif); font-weight: 400; font-size: 36px; line-height: 
 a.list__item:hover { text-decoration: none; }
 a.list__item:hover .list__title { text-decoration: underline; }
 .list__title { font-size: 16px; line-height: 1.4; }
+.list__watch { font-weight: 600; color: var(--accent); }
 
 /* Footer */
 .footer { background: var(--footer-bg); color: var(--footer-text); margin-top: auto; }
@@ -228,8 +229,8 @@ a.list__item:hover .list__title { text-decoration: underline; }
   html { scroll-padding-top: 70px; }
   .site-header__inner { height: 56px; }
   .wordmark { font-size: 22px; }
-  .nav a:not(.nav__cv) { display: none; }
-  .nav__cv { font-size: 14px; }
+  .nav a:not(.nav__contact) { display: none; }
+  .nav__contact { font-size: 14px; }
 
   .hero { height: 500px; }
   .hero__caption { display: none; }
