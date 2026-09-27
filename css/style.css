@@ -102,6 +102,7 @@ h2 { font-family: var(--serif); font-weight: 400; font-size: 36px; line-height: 
 .section__sub { font-size: 16px; color: var(--muted); }
 
 /* Hero */
+/* The hero photo's sizes attribute in index.html is worked out from these heights (620px, 500px on phones) */
 .hero {
   position: relative; height: 620px; overflow: hidden; background: var(--ink); color: #fff;
 }
@@ -113,8 +114,9 @@ h2 { font-family: var(--serif); font-weight: 400; font-size: 36px; line-height: 
   position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(14,26,20,0.08) 0%, rgba(14,26,20,0.40) 45%, rgba(14,26,20,0.86) 100%);
 }
+/* right: 19px matches the visible gap above the letters (16px plus the line spacing above them) */
 .hero__caption {
-  position: absolute; right: var(--gutter); top: 16px;
+  position: absolute; right: 19px; top: 16px;
   font-size: 12px; color: rgba(255,255,255,0.8);
 }
 .hero__content {
