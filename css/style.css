@@ -238,7 +238,7 @@ a.list__item:hover .list__title { text-decoration: underline; }
   .hero__title { font-size: 27px; line-height: 1.2; }
   .eyebrow--light { font-size: 12px; letter-spacing: 1.4px; }
   .pills { gap: 8px; }
-  .pills a { min-height: 40px; padding: 0 13px; font-size: 14px; }
+  .pills a { min-height: 40px; padding: 0 12px; font-size: 14px; }
 
   .section { padding-top: 28px; padding-bottom: 24px; }
   h2 { font-size: 28px; }
