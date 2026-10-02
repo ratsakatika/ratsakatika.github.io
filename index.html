@@ -140,12 +140,13 @@
           <p class="eyebrow eyebrow--accent">Deployed · 2024 · real-time wildlife alerts</p>
           <figure class="card__figure">
             <img src="img/bear.jpg" width="1400" height="994" alt="Camera-trap photograph of a brown bear in a forest clearing with the model's detection box" loading="lazy">
-            <figcaption>A European brown bear detected by the real-time wildlife alert system.</figcaption>
+            <figcaption>A European brown bear detected by the real-time wildlife alert system. Photo © Fundația Conservation Carpathia.</figcaption>
           </figure>
           <h3 class="card__title">Using AI to help rangers protect wildlife and rural communities</h3>
           <p>A two-stage AI classifier identifies wildlife, such as bears, wolves and wild boar, in photos received from internet-enabled camera traps. The system then sends real-time alerts to Fundația Conservation Carpathia's rapid intervention teams. In operational use since May 2024.</p>
           <p class="links">
             <a class="link link--primary" href="https://www.endangeredlandscapes.org/news/ai-for-wildlife-monitoring-a-real-time-alert-system-for-bears-and-wild-boars-in-romanias-carpathian-mountains/" target="_blank" rel="noopener">Read the story</a>
+            <a class="link" href="https://www.youtube.com/watch?v=_w2BkjES0kM" target="_blank" rel="noopener">Watch the demo</a>
             <a class="link" href="https://github.com/ratsakatika/camera-traps" target="_blank" rel="noopener">Code</a>
           </p>
         </article>
@@ -324,9 +325,49 @@
           <li><a href="https://scholar.google.com/citations?user=9OUmu1MAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
         </ul>
       </div>
-      <p class="footer__small">© 2026 Thomas Ratsakatika · All photographs are my own</p>
+      <p class="footer__small">© 2026 Thomas Ratsakatika · All photographs are my own unless otherwise stated</p>
     </div>
   </footer>
+
+  <dialog class="video" id="video" aria-label="Video player">
+    <form method="dialog">
+      <button class="video__close">Close video <span aria-hidden="true">×</span></button>
+    </form>
+    <div class="video__frame"></div>
+  </dialog>
+
+  <script>
+    // Plays the page's YouTube links in a lightbox. Without JavaScript they open YouTube instead.
+    (function () {
+      var dialog = document.getElementById('video');
+      var frame = dialog.querySelector('.video__frame');
+
+      document.querySelectorAll('a[href^="https://www.youtube.com/watch?v="]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          // Leave new-tab clicks, and browsers without <dialog>, to follow the link
+          if (!dialog.showModal || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+          e.preventDefault();
+          // Nothing loads from YouTube until now, and then only from its no-cookie domain.
+          // A new player each time keeps the Back button working.
+          var player = document.createElement('iframe');
+          player.src = 'https://www.youtube-nocookie.com/embed/' + new URL(link.href).searchParams.get('v') + '?autoplay=1&rel=0';
+          player.title = 'YouTube video player';
+          player.allow = 'autoplay; encrypted-media; picture-in-picture';
+          player.allowFullscreen = true;
+          frame.replaceChildren(player);
+          dialog.showModal();
+        });
+      });
+
+      // Removing the player stops the video, however the dialog was closed
+      dialog.addEventListener('close', function () { frame.replaceChildren(); });
+
+      // A click on the backdrop lands on the dialog itself
+      dialog.addEventListener('click', function (e) {
+        if (e.target === dialog) dialog.close();
+      });
+    })();
+  </script>
 
   <script data-goatcounter="https://ratsakatika.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>

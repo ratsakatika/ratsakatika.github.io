@@ -215,6 +215,33 @@ a.list__item:hover .list__title { text-decoration: underline; }
 .footer__links { display: flex; gap: 28px; flex-wrap: wrap; padding-top: 8px; }
 .footer__small { font-size: 13px; color: var(--footer-small); border-top: 1px solid var(--footer-rule); padding-top: 16px; }
 
+/* Video lightbox */
+/* Browsers without <dialog> would otherwise show it at the foot of the page */
+.video:not([open]) { display: none; }
+/* 16:9, as wide as the gutters allow, and short enough to leave 72px above for the close button (and the same below) */
+.video {
+  width: min(100vw - 2 * var(--gutter), (100vh - 144px) * 16 / 9, var(--max));
+  width: min(100vw - 2 * var(--gutter), (100dvh - 144px) * 16 / 9, var(--max));
+  max-width: none; max-height: none;
+  padding: 0; border: 0; background: none; overflow: visible;
+}
+.video::backdrop { background: rgba(14,26,20,0.92); }
+.video__frame { aspect-ratio: 16 / 9; background: #000; border-radius: 4px; overflow: hidden; }
+.video__frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+/* Sits just above the video's top right corner, in the style of the hero pills.
+   Filled, so the dimmed page text behind it cannot show through the label. */
+.video__close {
+  position: absolute; right: 0; bottom: calc(100% + 12px);
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px;
+  border: 1px solid rgba(255,255,255,0.55); border-radius: 999px; background: var(--ink);
+  color: #fff; font: inherit; font-size: 15px; font-weight: 500; cursor: pointer;
+}
+.video__close span { font-size: 22px; line-height: 1; }
+.video__close:hover { background: var(--ink-soft); }
+.video__close:focus-visible { outline-color: #fff; border-radius: 999px; }
+/* Stops the page scrolling behind the video */
+html:has(.video[open]) { overflow: hidden; }
+
 /* Tablet */
 @media (max-width: 900px) {
   :root { --gutter: 32px; }

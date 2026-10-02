@@ -23,13 +23,15 @@
       for (var i = 0; i < map.length; i++) {
         if (map[i][0].test(p)) { location.replace(map[i][1]); return; }
       }
+      // Any other address shows the message below for 5 seconds (as its last line says), then goes to the home page
+      setTimeout(function () { location.replace('/'); }, 5000);
     })();
   </script>
 </head>
 <body>
   <main class="section wrap notfound">
     <h2>Page not found</h2>
-    <p class="notfound__text">The site is now a single page. Try the <a href="/">home page</a>, or the <a href="/#latest">latest work</a>, <a href="/#experience">experience</a> and <a href="/#talks">talks</a> sections.</p>
+    <p class="notfound__text">If the page doesn't redirect to the home page after 5 seconds, <a href="/">click here</a>.</p>
   </main>
 </body>
 </html>
