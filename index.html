@@ -121,21 +121,21 @@
         <article class="card">
           <p class="eyebrow eyebrow--accent">Preprint · September 2026 · under review</p>
           <figure class="card__figure card__figure--map">
-            <!-- A clip plays over the map: on hover where there is a mouse, while in view on touch screens. The round
-                 button plays or pauses it anywhere (script at the foot of the page). Nothing loads until it is needed;
-                 without JavaScript the still map stays and the button is hidden. -->
+            <!-- A clip plays over the picture: on hover where there is a mouse, and from the round button anywhere
+                 (script at the foot of the page). Nothing loads until it is needed; without JavaScript the still
+                 picture stays and the button is hidden. The wildlife card below is built the same way. -->
             <div class="card__media">
               <picture>
                 <source srcset="img/map.webp" type="image/webp">
                 <img src="img/map.png" width="1146" height="701" alt="Map of predicted old-growth forest probability across the Făgăraș Mountains" loading="lazy">
               </picture>
-              <video class="card__video" width="1920" height="1080" muted playsinline loop preload="none" aria-hidden="true"
+              <video class="card__video card__video--fit" width="1920" height="1080" muted playsinline loop preload="none" aria-hidden="true"
                      disablepictureinpicture disableremoteplayback
                      data-src="video/panoramic-sweep-{width}.mp4" data-widths="640 960 1280 1920"></video>
               <button class="card__play" type="button" aria-label="Play the clip" hidden>
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                   <path class="card__play-icon" d="M8 5v14l11-7z"/>
-                  <path class="card__pause-icon" d="M6 5h4v14H6zM14 5h4v14h-4z"/>
+                  <path class="card__stop-icon" d="M6 6h12v12H6z"/>
                 </svg>
               </button>
             </div>
@@ -153,14 +153,24 @@
         <article class="card">
           <p class="eyebrow eyebrow--accent">Deployed · 2024 · real-time wildlife alerts</p>
           <figure class="card__figure">
-            <img src="img/bear.jpg" width="1400" height="994" alt="Camera-trap photograph of a brown bear in a forest clearing with the model's detection box" loading="lazy">
+            <div class="card__media">
+              <img src="img/bear.jpg" width="1400" height="994" alt="Camera-trap photograph of a brown bear in a forest clearing with the model's detection box" loading="lazy">
+              <video class="card__video card__video--fit" width="1920" height="1080" muted playsinline loop preload="none" aria-hidden="true"
+                     disablepictureinpicture disableremoteplayback
+                     data-src="video/wildlife-alerts-{width}.mp4" data-widths="640 960 1280 1920"></video>
+              <button class="card__play" type="button" aria-label="Play the clip" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path class="card__play-icon" d="M8 5v14l11-7z"/>
+                  <path class="card__stop-icon" d="M6 6h12v12H6z"/>
+                </svg>
+              </button>
+            </div>
             <figcaption>A European brown bear detected by the real-time wildlife alert system. Photo © Fundația Conservation Carpathia.</figcaption>
           </figure>
           <h3 class="card__title">Using AI to help rangers protect wildlife and rural communities</h3>
           <p>A two-stage AI classifier identifies wildlife, such as bears, wolves and wild boar, in photos received from internet-enabled camera traps. The system then sends real-time alerts to Fundația Conservation Carpathia's rapid intervention teams. In operational use since May 2024.</p>
           <p class="links">
             <a class="link link--primary" href="https://www.endangeredlandscapes.org/news/ai-for-wildlife-monitoring-a-real-time-alert-system-for-bears-and-wild-boars-in-romanias-carpathian-mountains/" target="_blank" rel="noopener">Read the story</a>
-            <a class="link" href="https://www.youtube.com/watch?v=_w2BkjES0kM" target="_blank" rel="noopener">Watch the demo</a>
             <a class="link" href="https://github.com/ratsakatika/camera-traps" target="_blank" rel="noopener">Code</a>
           </p>
         </article>
@@ -392,11 +402,11 @@
   </script>
 
   <script>
-    // A short clip plays over the map: on hover where there is a mouse, and while the map is in view on touch
-    // screens, as feeds do. The round button in the corner plays or pauses it anywhere, and once it has been
-    // used the button's choice stands. Nothing is fetched until it is needed, and the file is chosen once, for
-    // the size the map is shown at (device pixels up to 2x, allowing for the crop of object-fit: cover).
-    // Reduced motion and Data Saver leave the clip to the button; without JavaScript the still map stays.
+    // A short clip plays over each Selected work picture: on hover where there is a mouse, and from the round
+    // button in the corner anywhere, touch screens included. Once the button has been used its choice stands.
+    // Nothing is fetched until it is needed, and the file is chosen once, for the size the clip is shown at
+    // (device pixels up to 2x, allowing for how it fits its box). Reduced motion and Data Saver leave
+    // the clip to the button; without JavaScript the still picture stays and the button is hidden.
     (function () {
       var hoverable = matchMedia('(hover: hover) and (pointer: fine)').matches;
       var saveData = !!(navigator.connection && navigator.connection.saveData);
@@ -406,14 +416,16 @@
         var video = media.querySelector('.card__video');
         var button = media.querySelector('.card__play');
         if (!video || !button) return;
-        var wanted = 'auto';  // 'play' or 'pause' once the button has been used
+        var wanted = 'auto';  // 'play' or 'stop' once the button has been used
 
-        // The smallest file at least as wide as the box needs; the smallest of all under Data Saver
+        // The smallest file at least as wide as the clip is shown (a clip that fits inside the box is narrower
+        // than one that covers it); the smallest of all under Data Saver
         function choose() {
           var widths = video.dataset.widths.split(' ').map(Number);
           var box = media.getBoundingClientRect();
           var density = Math.min(window.devicePixelRatio || 1, 2);
-          var needed = Math.max(box.width, box.height * video.width / video.height) * density;
+          var fit = getComputedStyle(video).objectFit === 'contain' ? Math.min : Math.max;
+          var needed = fit(box.width, box.height * video.width / video.height) * density;
           var width = widths.filter(function (w) { return w >= needed; })[0] || widths[widths.length - 1];
           if (saveData) width = widths[0];
           return video.dataset.src.replace('{width}', width);
@@ -429,9 +441,10 @@
         function play() { prime(); video.play().catch(function () {}); }
 
         button.hidden = false;
+        // The button plays, or stops: back to the start, so the next play begins the clip afresh
         button.addEventListener('click', function () {
-          wanted = video.paused ? 'play' : 'pause';
-          if (wanted === 'play') play(); else video.pause();
+          wanted = video.paused ? 'play' : 'stop';
+          if (wanted === 'play') { play(); } else { video.pause(); video.currentTime = 0; }
         });
 
         if (hoverable) {
@@ -447,14 +460,14 @@
           });
         }
 
-        // At least half in view: touch screens start the clip, and a clip the button started resumes.
-        // Less than that: whatever is playing pauses.
+        // Whatever is playing pauses when less than half of it is in view; a clip the button started resumes
+        // when it is back
         if ('IntersectionObserver' in window) {
           new IntersectionObserver(function (entries) {
             var entry = entries[entries.length - 1];
             if (!(entry.isIntersecting && entry.intersectionRatio >= 0.5)) {
               if (!video.paused) video.pause();
-            } else if (wanted === 'play' || (wanted === 'auto' && automatic && !hoverable)) {
+            } else if (wanted === 'play') {
               play();
             }
           }, { threshold: 0.5 }).observe(media);
@@ -463,7 +476,7 @@
         // The map stays until the clip is moving, so a start never shows a blank frame
         video.addEventListener('playing', function () {
           media.classList.add('card__media--playing');
-          button.setAttribute('aria-label', 'Pause the clip');
+          button.setAttribute('aria-label', 'Stop the clip');
         });
         video.addEventListener('pause', function () {
           media.classList.remove('card__media--playing');
