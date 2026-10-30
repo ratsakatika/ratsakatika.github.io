@@ -143,6 +143,30 @@ h2 { font-family: var(--serif); font-weight: 400; font-size: 36px; line-height: 
 }
 .card__figure img { width: 100%; height: 330px; object-fit: cover; border-radius: 4px; }
 .card__figure--map img { object-fit: contain; }
+/* The clip that plays over the map; it covers the map's box and fades in once it is moving */
+.card__media { position: relative; }
+.card__video {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; border-radius: 4px;
+  opacity: 0; transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.card__media--playing .card__video { opacity: 1; }
+/* The round play/pause button in the map's corner; its hit area reaches 6px beyond the circle */
+.card__play {
+  position: absolute; right: 10px; bottom: 10px; width: 40px; height: 40px; padding: 0;
+  display: grid; place-items: center;
+  border: 0; border-radius: 50%; background: rgba(30,42,34,0.62); color: #fff;
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+.card__play[hidden] { display: none; }
+.card__play::before { content: ""; position: absolute; inset: -6px; border-radius: 50%; }
+.card__play:hover { background: rgba(30,42,34,0.85); }
+.card__play:focus-visible { outline-color: #fff; border-radius: 50%; }
+.card__play svg { width: 20px; height: 20px; fill: currentColor; }
+.card__play-icon { transform: translateX(1px); }
+.card__pause-icon, .card__media--playing .card__play-icon { display: none; }
+.card__media--playing .card__pause-icon { display: block; }
 .card__figure figcaption { margin-top: 10px; font-size: 13px; color: var(--muted); }
 .card__title { font-family: var(--serif); font-weight: 400; font-size: 26px; line-height: 1.25; }
 .card > p { font-size: 16px; line-height: 1.55; color: var(--ink-soft); }
@@ -309,7 +333,7 @@ html:has(.video[open]) { overflow: hidden; }
 .notfound__text { margin-top: 12px; max-width: 560px; color: var(--ink-soft); }
 
 @media print {
-  .site-header, .hero__shade, .skip { display: none; }
+  .site-header, .hero__shade, .skip, .card__play { display: none; }
   .hero { height: auto; color: var(--ink); }
   .hero__photo { display: none; }
   .hero__content { position: static; }

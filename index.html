@@ -121,10 +121,24 @@
         <article class="card">
           <p class="eyebrow eyebrow--accent">Preprint · September 2026 · under review</p>
           <figure class="card__figure card__figure--map">
-            <picture>
-              <source srcset="img/map.webp" type="image/webp">
-              <img src="img/map.png" width="1146" height="701" alt="Map of predicted old-growth forest probability across the Făgăraș Mountains" loading="lazy">
-            </picture>
+            <!-- A clip plays over the map: on hover where there is a mouse, while in view on touch screens. The round
+                 button plays or pauses it anywhere (script at the foot of the page). Nothing loads until it is needed;
+                 without JavaScript the still map stays and the button is hidden. -->
+            <div class="card__media">
+              <picture>
+                <source srcset="img/map.webp" type="image/webp">
+                <img src="img/map.png" width="1146" height="701" alt="Map of predicted old-growth forest probability across the Făgăraș Mountains" loading="lazy">
+              </picture>
+              <video class="card__video" width="1920" height="1080" muted playsinline loop preload="none" aria-hidden="true"
+                     disablepictureinpicture disableremoteplayback
+                     data-src="video/panoramic-sweep-{width}.mp4" data-widths="640 960 1280 1920"></video>
+              <button class="card__play" type="button" aria-label="Play the clip" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path class="card__play-icon" d="M8 5v14l11-7z"/>
+                  <path class="card__pause-icon" d="M6 5h4v14H6zM14 5h4v14h-4z"/>
+                </svg>
+              </button>
+            </div>
             <figcaption>Old-growth forest across the Făgăraș Mountains, from most likely (green) to least likely (red).</figcaption>
           </figure>
           <h3 class="card__title">Geospatial embeddings detect old-growth forests but buffered spatial validation narrows their advantage over Sentinel features</h3>
@@ -373,6 +387,88 @@
       // A click on the backdrop lands on the dialog itself
       dialog.addEventListener('click', function (e) {
         if (e.target === dialog) dialog.close();
+      });
+    })();
+  </script>
+
+  <script>
+    // A short clip plays over the map: on hover where there is a mouse, and while the map is in view on touch
+    // screens, as feeds do. The round button in the corner plays or pauses it anywhere, and once it has been
+    // used the button's choice stands. Nothing is fetched until it is needed, and the file is chosen once, for
+    // the size the map is shown at (device pixels up to 2x, allowing for the crop of object-fit: cover).
+    // Reduced motion and Data Saver leave the clip to the button; without JavaScript the still map stays.
+    (function () {
+      var hoverable = matchMedia('(hover: hover) and (pointer: fine)').matches;
+      var saveData = !!(navigator.connection && navigator.connection.saveData);
+      var automatic = !saveData && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      document.querySelectorAll('.card__media').forEach(function (media) {
+        var video = media.querySelector('.card__video');
+        var button = media.querySelector('.card__play');
+        if (!video || !button) return;
+        var wanted = 'auto';  // 'play' or 'pause' once the button has been used
+
+        // The smallest file at least as wide as the box needs; the smallest of all under Data Saver
+        function choose() {
+          var widths = video.dataset.widths.split(' ').map(Number);
+          var box = media.getBoundingClientRect();
+          var density = Math.min(window.devicePixelRatio || 1, 2);
+          var needed = Math.max(box.width, box.height * video.width / video.height) * density;
+          var width = widths.filter(function (w) { return w >= needed; })[0] || widths[widths.length - 1];
+          if (saveData) width = widths[0];
+          return video.dataset.src.replace('{width}', width);
+        }
+        function prime() {
+          if (video.src) return;
+          video.muted = true;
+          video.preload = 'metadata';
+          video.src = choose();
+        }
+        // Rejected when the pointer leaves before playback starts, when the file is missing, or when the device
+        // refuses to start a video by itself (low power mode); the map and the play button simply stay
+        function play() { prime(); video.play().catch(function () {}); }
+
+        button.hidden = false;
+        button.addEventListener('click', function () {
+          wanted = video.paused ? 'play' : 'pause';
+          if (wanted === 'play') play(); else video.pause();
+        });
+
+        if (hoverable) {
+          // Fetches the file's index while the pointer is still on the card, so the first hover starts promptly
+          (media.closest('.card') || media).addEventListener('pointerenter', function () {
+            if (automatic && wanted === 'auto') prime();
+          });
+          media.addEventListener('pointerenter', function (e) {
+            if (e.pointerType !== 'touch' && automatic && wanted === 'auto') play();
+          });
+          media.addEventListener('pointerleave', function () {
+            if (wanted === 'auto') video.pause();
+          });
+        }
+
+        // At least half in view: touch screens start the clip, and a clip the button started resumes.
+        // Less than that: whatever is playing pauses.
+        if ('IntersectionObserver' in window) {
+          new IntersectionObserver(function (entries) {
+            var entry = entries[entries.length - 1];
+            if (!(entry.isIntersecting && entry.intersectionRatio >= 0.5)) {
+              if (!video.paused) video.pause();
+            } else if (wanted === 'play' || (wanted === 'auto' && automatic && !hoverable)) {
+              play();
+            }
+          }, { threshold: 0.5 }).observe(media);
+        }
+
+        // The map stays until the clip is moving, so a start never shows a blank frame
+        video.addEventListener('playing', function () {
+          media.classList.add('card__media--playing');
+          button.setAttribute('aria-label', 'Pause the clip');
+        });
+        video.addEventListener('pause', function () {
+          media.classList.remove('card__media--playing');
+          button.setAttribute('aria-label', 'Play the clip');
+        });
       });
     })();
   </script>
